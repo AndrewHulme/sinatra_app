@@ -26,3 +26,9 @@ get '/named-cat' do
     @random_name = params[:name]
     erb(:index)
 end
+
+get '/test-cat' do
+    p params
+    @random_name = params[:name]
+    erb(:index)
+end

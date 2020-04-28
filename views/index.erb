@@ -1,5 +1,14 @@
 <% if @random_name %>
 <h1>My name is <%= @random_name %> </h1>
+
+<% elsif @random_name == nil %>
+
+<form action="/named-cat">
+  <% # "food" is the param in app.rb%>
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+
 <% end %>
 
 <div style= 'border: 3px dashed pink'>
