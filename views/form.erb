@@ -1,11 +1,3 @@
-<% if @random_name %>
-<h1>My name is <%= @random_name %> </h1>
-<% end %>
-
-<div style= 'border: 3px dashed pink'>
-  <img src='http://bit.ly/1eze8aE'>
-</div>
-
 <form action="/named-cat" method="post">
   <% # "food" is the param in app.rb%>
   <input type="text" name="name">
